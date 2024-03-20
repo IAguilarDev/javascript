@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responde rapido</title>
+</head>
+<body onload="comenzarCuentaRegresiva()">
+    <h2>Responde a las preguntas lo mas rapido que puedas <span id="cuentaRegresiva"></span></h2>
+
+    <p>¿Cual es la capital de francia?</p>
+    <input type="text" id="respuesta1">
+    
+    <p>¿Cual es la capital de España?</p>
+    <input type="text" id="respuesta2">
+    
+    <p>¿Cual es la capital de EEUU?</p>
+    <input type="text" id="respuesta3">
+    
+    <p>¿Cual es la capital de Brasil?</p>
+    <input type="text" id="respuesta4">
+    
+    <p>¿Cual es la capital de Honduras?</p>
+    <input type="text" id="respuesta5">
+    <br> <br>
+    
+    <button onclick="finalizado()">Finalizado!</button>
+    <br> <br>
+    <button onclick="volveraIntentar()">Volver a intentar</button>
+
+    <audio id="audiofinal">
+        <source src="gameover.mp3">
+        Sonido no habilitado
+    </audio>
+
+    <script src="main.js">
+
+    </script>
+</body>
+</html>
