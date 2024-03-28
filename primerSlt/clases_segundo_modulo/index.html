@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Primer numero</p>
+    <input type="number" id="primerNumero">
+    
+    <p>Segundo numero</p>
+    <input type="number" id="segundoNumero">
+
+    <h2 id="textoResultado"></h2>
+
+    <button onclick="mostrarResultado()">Calcular</button>
+
+    <script>
+
+        function sumar(numero1, numero2){
+            resultado = parseInt(numero1) + parseInt(numero2);
+            return resultado;
+        }
+
+        function mostrarResultado(){
+            let elemento1 = document.querySelector('#primerNumero');
+            let elemento2 = document.querySelector('#segundoNumero');
+            let elementtexto = document.querySelector('#textoResultado');
+
+            let elementosuma  = sumar(elemento1.value, elemento2.value);
+
+            elementtexto.innerHTML = elementosuma;
+
+        }
+
+        
+    </script>
+</body>
+</html>
